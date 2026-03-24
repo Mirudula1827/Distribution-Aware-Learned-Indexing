@@ -76,4 +76,5 @@ This work shows that:
 
 This project demonstrates that incorporating distribution awareness into learned indexing significantly improves both performance and robustness, bridging the gap between classical data structures and machine learning-based systems.
 
+> Under progress
 > Currently as a DAA curriculum project
