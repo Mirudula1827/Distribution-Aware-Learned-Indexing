@@ -68,7 +68,7 @@ This work shows that:
 
 - Mirudula N D
 - Sanjay Kumar Sakamuri Kamalakar
-- Jane Pathuva Reya
+- Jane Pathuva Reya R
  
 ---
 
