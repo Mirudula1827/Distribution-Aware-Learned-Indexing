@@ -5,16 +5,20 @@ np.random.seed(42)
 random.seed(42)
 
 def generate_data(n, dist="uniform"):
+    important_values = np.array([1, 100, 1000, 10000])
+
     if dist == "uniform":
-        return np.arange(n)
+        data = np.arange(n)
     elif dist == "random":
-        return np.sort(np.random.choice(np.arange(n * 10), n, replace=False))
+        data = np.random.choice(np.arange(n * 10), n, replace=False)
     elif dist == "skewed":
         data = (np.random.pareto(2.0, n) + 1) * 1000
         data = np.unique(data.astype(int))
-        return np.sort(data)
     else:
         raise ValueError("Unknown distribution")
+
+    data = np.unique(np.concatenate((data, important_values)))
+    return np.sort(data)
 
 def linear_search(arr, target):
     steps = 0
