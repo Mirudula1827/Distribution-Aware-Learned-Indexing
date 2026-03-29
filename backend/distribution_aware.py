@@ -144,3 +144,41 @@ def run_benchmarks():
 
 if __name__ == "__main__":
     run_benchmarks()
+
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    data = request.get_json()
+    key = data.get("key")
+    dist = data.get("distribution", "uniform")
+
+    # generate data
+    dataset = generate_data(10000, dist)
+
+    # train models
+    simple = SimpleLearnedIndex()
+    simple.train(dataset)
+
+    rmi = DistributionAwareRMI()
+    rmi.train(dataset)
+
+    # run searches
+    lin_idx, lin_steps = linear_search(dataset, key)
+    bin_idx, bin_steps = binary_search(dataset, key)
+    sim_idx, sim_steps = simple.search(key)
+    rmi_idx, rmi_steps = rmi.search(key)
+
+    return jsonify({
+        "linear": {"index": lin_idx, "steps": lin_steps},
+        "binary": {"index": bin_idx, "steps": bin_steps},
+        "simple": {"index": sim_idx, "steps": sim_steps},
+        "rmi": {"index": rmi_idx, "steps": rmi_steps},
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True)
