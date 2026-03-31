@@ -23,7 +23,23 @@ position ≈ f(key)
 and refine predictions using distribution-aware local models with bounded error correction.
 
 ---
+## 📂 Project Structure
 
+```
+Distribution-Aware-Learned-Indexing/
+│── backend/
+│   ├── distribution_aware.py
+│   ├── requirements.txt
+│
+│── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│
+│── README.md
+```
+---
 ## Core Features
 
 * Hierarchical learned index (root + leaf models)
@@ -97,25 +113,6 @@ Frontend runs on: http://localhost:3000
 
 - Ensure backend is running before frontend
 - Supported distributions: uniform, random, skewed
-
----
-
-## 📂 Project Structure
-
-```
-Distribution-Aware-Learned-Indexing/
-│── backend/
-│   ├── distribution_aware.py
-│   ├── requirements.txt
-│
-│── frontend/
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   ├── package-lock.json
-│
-│── README.md
-```
 
 ---
 
