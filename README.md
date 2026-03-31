@@ -82,19 +82,19 @@ This project demonstrates that incorporating distribution awareness into learned
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Frontend: React.js
 - Backend: Flask (Python)
 - Libraries: NumPy
 
 ---
-## 🚀 Run the Project
+## 🚀 How to run?
 
 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Mirudula1827/Distribution-Aware-Learned-Indexing.git
+cd Distribution-Aware-Learned-Indexing
 ```
 2️⃣ Backend Setup
 ```
@@ -117,5 +117,26 @@ Frontend runs on: http://localhost:3000
 
 - Ensure backend is running before frontend
 - Supported distributions: uniform, random, skewed
+
+---
+
+## 📂 Project Structure
+
+```
+Distribution-Aware-Learned-Indexing/
+│── backend/
+│   ├── distribution_aware.py
+│   ├── requirements.txt
+│
+│── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│
+│── README.md
+```
+
+
 
 
