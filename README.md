@@ -83,9 +83,10 @@ This project demonstrates that incorporating distribution awareness into learned
 ---
 
 ## Tech Stack
--Frontend: React.js
--Backend: Flask (Python)
--Libraries: NumPy
+
+- Frontend: React.js
+- Backend: Flask (Python)
+- Libraries: NumPy
 
 ---
 ## 🚀 Run the Project
@@ -114,7 +115,7 @@ Frontend runs on: http://localhost:3000
 ---
 ### Note
 
--Ensure backend is running before frontend
--Supported distributions: uniform, random, skewed
+- Ensure backend is running before frontend
+- Supported distributions: uniform, random, skewed
 
 
