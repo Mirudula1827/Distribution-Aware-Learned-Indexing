@@ -78,3 +78,43 @@ This project demonstrates that incorporating distribution awareness into learned
 
 > Under progress
 > Currently as a DAA curriculum project
+
+
+---
+
+## Tech Stack
+-Frontend: React.js
+-Backend: Flask (Python)
+-Libraries: NumPy
+
+---
+## 🚀 Run the Project
+
+1️⃣ Clone the Repository
+```
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+2️⃣ Backend Setup
+```
+cd backend
+pip install -r requirements.txt
+python distribution_aware.py
+```
+Backend runs on: http://localhost:5000
+
+3️⃣ Frontend Setup
+```
+cd frontend
+npm install
+npm start
+```
+Frontend runs on: http://localhost:3000
+
+---
+### Note
+
+-Ensure backend is running before frontend
+-Supported distributions: uniform, random, skewed
+
+
