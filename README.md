@@ -62,26 +62,6 @@ This work shows that:
 ---
 
 
----
-
-## 👤 Author
-
-- Mirudula N D
-- Sanjay Kumar Sakamuri Kamalakar
-- Jane Pathuva Reya R
- 
----
-
-## Summary
-
-This project demonstrates that incorporating distribution awareness into learned indexing significantly improves both performance and robustness, bridging the gap between classical data structures and machine learning-based systems.
-
-> Under progress
-> Currently as a DAA curriculum project
-
-
----
-
 ## 🛠️ Tech Stack
 
 - Frontend: React.js
@@ -136,6 +116,23 @@ Distribution-Aware-Learned-Indexing/
 │
 │── README.md
 ```
+
+---
+
+## 👤 Author
+
+- Mirudula N D
+- Sanjay Kumar Sakamuri Kamalakar
+- Jane Pathuva Reya R
+ 
+---
+
+## Summary
+
+This project demonstrates that incorporating distribution awareness into learned indexing significantly improves both performance and robustness, bridging the gap between classical data structures and machine learning-based systems.
+
+> Under progress
+> Currently as a DAA curriculum project
 
 
 
